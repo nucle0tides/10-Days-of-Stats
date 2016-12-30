@@ -2,7 +2,7 @@
 	Day 0/9
 	HackerRanks's 10 Days of Stats 
 
-	Given an array of  integers, calculate and print the the respective mean, median, and mode on separate lines. 
+	Given an array of integers, calculate and print the the respective mean, median, and mode on separate lines. 
 	If your array contains more than one modal value, choose the numerically smallest one.
 	
 	Note: Other than the modal value (which will always be an integer), 
