@@ -20,17 +20,20 @@ def calculate_mean(arr, num_elements):
 
 	return element_sum / num_elements
 
-def squared_distance(arr, num_elements, mean): 
+def variance(arr, num_elements, mean): 
 	ret_sum = 0
 	for i in range(num_elements): 
 		difference = arr[i] - mean 
 		ret_sum += (difference ** 2)
 	return ret_sum
 
+def standard_deviation(variance, num_elements): 
+	return math.sqrt(variance, / num_elements)
+
 if __name__ == '__main__':
 	num_elements = int(input().strip())
 	arr = [int(x) for x in input().split()]
 	mean = calculate_mean(arr, num_elements)
-	sq_dist = squared_distance(arr, num_elements, mean)
-	st_dev = math.sqrt(sq_dist / num_elements)
+	variance = variance(arr, num_elements, mean)
+	st_dev = standard_deviation(variance / num_elements)
 	print("{0:.1f}".format(st_dev))
